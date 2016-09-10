@@ -29,26 +29,27 @@
 
     <RelativeLayout
         android:id="@+id/relative"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear"
-        android:paddingTop="50dp"
-        android:layout_marginRight="20dp">
+        android:paddingTop="50dp">
 
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/main_enter"
+            android:textColor="@android:color/black"
             android:paddingRight="20dp"
             android:textSize="30dp"/>
 
         <EditText
             android:id="@+id/edittext"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
             android:background="@android:color/white"
-            android:layout_toRightOf="@+id/text"
-            android:layout_alignBaseline="@+id/text"
+            android:layout_below="@+id/text"
             android:padding="5dp"
             android:textSize="20dp"
             android:clickable="true"
@@ -57,13 +58,24 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_below="@+id/edittext"
+            android:layout_toRightOf="@id/edittext"
+            android:text="@string/main_search"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/buttonshape"
+            android:clickable="true"
+            android:layout_alignBaseline="@id/edittext"/>
 
-    <Button
-        android:layout_marginTop="30dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edittext"
-        android:text="@string/main_search"/>
+    </RelativeLayout>
 
 </LinearLayout>
