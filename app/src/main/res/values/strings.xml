@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Weather App</string>
+
+    <string name="main_title">How\'s the Weather Out There?</string>
+    <string name="main_enter">Enter Your City\'s Name:</string>
+    <string name="main_search">Search</string>
 </resources>
