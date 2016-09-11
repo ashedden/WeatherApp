@@ -59,7 +59,7 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/main_button"
             android:layout_below="@+id/edittext"
             android:layout_toRightOf="@id/edittext"
             android:text="@string/main_search"

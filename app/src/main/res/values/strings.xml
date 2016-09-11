@@ -7,10 +7,16 @@
     
     <string name="today_title">Today\'s Weather</string>
     <string name="today_city">City Name: </string>
-    <string name="today_weather">Weather Descripton: </string>
+    <string name="today_weather">Weather Description: </string>
     <string name="today_temp">Temperature: </string>
     <string name="today_humid">Humidity: </string>
     <string name="today_wind">Wind Speed: </string>
     <string name="today_forecast">See 5 Day Forecast</string>
     <string name="today_sample">Sample Text</string>
+    
+    <string name="five_title">5 Day Forecast</string>
+    <string name="five_date">Date: </string>
+    <string name="five_weather">Weather Description: </string>
+    <string name="five_temp">Temperature: </string>
+    <string name="five_sample">Sample Text</string>
 </resources>

@@ -18,12 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //No title preferably
-        android.support.v7.app.ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setTitle("");
-
         //Button is clicked, open TodaysWeatherActivity
-        searchButton = (Button) findViewById(R.id.button);
+        searchButton = (Button) findViewById(R.id.main_button);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

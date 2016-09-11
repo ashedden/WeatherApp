@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#FFC400</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="orange">#FF7C00</color>
     <color name="background">#76DEF7</color>
 </resources>
