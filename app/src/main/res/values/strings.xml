@@ -4,4 +4,13 @@
     <string name="main_title">How\'s the Weather Out There?</string>
     <string name="main_enter">Enter Your City\'s Name:</string>
     <string name="main_search">Search</string>
+    
+    <string name="today_title">Today\'s Weather</string>
+    <string name="today_city">City Name: </string>
+    <string name="today_weather">Weather Descripton: </string>
+    <string name="today_temp">Temperature: </string>
+    <string name="today_humid">Humidity: </string>
+    <string name="today_wind">Wind Speed: </string>
+    <string name="today_forecast">See 5 Day Forecast</string>
+    <string name="today_sample">Sample Text</string>
 </resources>
