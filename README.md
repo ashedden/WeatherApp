@@ -18,7 +18,7 @@ I will first test the app using a XML file.
 
 -[Table Layout] (https://developer.android.com/guide/topics/ui/layout/grid.html)
 
-##Screenshots of Sample Text on Samsung Tablet
+##Screenshots of Sample Text on Samsung Galaxy Tab A:
 
 **Main Screen:**
 
@@ -31,3 +31,9 @@ I will first test the app using a XML file.
 **5 Day Forcast (Scrollable):**
 
 ![Alt text](/app/src/main/res/drawable/FiveDayForecast.png?raw=true)
+
+##Future Goals:
+
+-Make layout consistent on all layouts (probably looks funky on Android phones since I don't have a smaller Android device/phone to test on)
+
+-Add OpenWeatherMap API
