@@ -84,7 +84,7 @@ public class FiveDayActivity extends AppCompatActivity {
             InputStream is = null;
             BufferedReader br1 = null;
             int forecastDayNum = 1;
-            final String url = API_FORECAST_URL + "&cnt=" + forecastDayNum + "&q=" + city;
+            final String url = API_FORECAST_URL + "&cnt=5" + forecastDayNum + "&q=" + city;
 
             try {
                 con = (HttpURLConnection) ( new URL(url)).openConnection();
@@ -106,18 +106,64 @@ public class FiveDayActivity extends AppCompatActivity {
                 // We create out JSONObject from the data
                 JSONObject jObj = new JSONObject(buffer1.toString());
 
+                Log.e("HELP", "JSON: " + jObj.toString());
+
                 JSONArray jArr = jObj.getJSONArray("list");
 
-                for(int i=0;i<jArr.length();i++){
-
+                for(int i=0;i<jArr.length()-2;i++) {
+                    Log.e("HELP", "i = " + i);
                     JSONObject wObj = jArr.getJSONObject(i);
-                    JSONObject tempObj = wObj.getJSONObject("temp");
-                    forecast.temperature.setTemp((float)tempObj.getDouble("day"));
-                    JSONArray weatherjArr = wObj.getJSONArray("weather");
+                    Log.e("HELP", "wObj = " + wObj.toString());
 
-                    for(int j=0;j<weatherjArr.length();j++){
-                        JSONObject dObj = weatherjArr.getJSONObject(j);
-                        forecast.currentCondition.setDescr(dObj.getString("description"));
+                    if (i == 0) {
+                        JSONObject tempObj = wObj.getJSONObject("temp");
+                        forecast.temperature.setTemp1((float) tempObj.getDouble("day"));
+                        JSONArray weatherjArr = wObj.getJSONArray("weather");
+
+                        for (int j = 0; j < weatherjArr.length(); j++) {
+                            JSONObject dObj = weatherjArr.getJSONObject(j);
+                            forecast.currentCondition.setDescr1(dObj.getString("description"));
+                        }
+                    }
+                    if (i == 1) {
+                        JSONObject tempObj = wObj.getJSONObject("temp");
+                        forecast.temperature.setTemp2((float) tempObj.getDouble("day"));
+                        JSONArray weatherjArr = wObj.getJSONArray("weather");
+
+                        for (int j = 0; j < weatherjArr.length(); j++) {
+                            JSONObject dObj = weatherjArr.getJSONObject(j);
+                            forecast.currentCondition.setDescr2(dObj.getString("description"));
+                        }
+                    }
+                    if (i == 2) {
+                        JSONObject tempObj = wObj.getJSONObject("temp");
+                        forecast.temperature.setTemp3((float) tempObj.getDouble("day"));
+                        JSONArray weatherjArr = wObj.getJSONArray("weather");
+
+                        for (int j = 0; j < weatherjArr.length(); j++) {
+                            JSONObject dObj = weatherjArr.getJSONObject(j);
+                            forecast.currentCondition.setDescr3(dObj.getString("description"));
+                        }
+                    }
+                    if (i == 3) {
+                        JSONObject tempObj = wObj.getJSONObject("temp");
+                        forecast.temperature.setTemp4((float) tempObj.getDouble("day"));
+                        JSONArray weatherjArr = wObj.getJSONArray("weather");
+
+                        for (int j = 0; j < weatherjArr.length(); j++) {
+                            JSONObject dObj = weatherjArr.getJSONObject(j);
+                            forecast.currentCondition.setDescr4(dObj.getString("description"));
+                        }
+                    }
+                    if (i == 4) {
+                        JSONObject tempObj = wObj.getJSONObject("temp");
+                        forecast.temperature.setTemp5((float) tempObj.getDouble("day"));
+                        JSONArray weatherjArr = wObj.getJSONArray("weather");
+
+                        for (int j = 0; j < weatherjArr.length(); j++) {
+                            JSONObject dObj = weatherjArr.getJSONObject(j);
+                            forecast.currentCondition.setDescr5(dObj.getString("description"));
+                        }
                     }
                 }
 
@@ -163,20 +209,20 @@ public class FiveDayActivity extends AppCompatActivity {
             formattedDate = sdf.format(gc.getTime());
             date5.setText(formattedDate);
 
-            weatherDescription1.setText(forecastWeather.currentCondition.getDescr());
-            temperature1.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+            weatherDescription1.setText(forecastWeather.currentCondition.getDescr1());
+            temperature1.setText("" + Math.round((forecastWeather.temperature.getTemp1() * 9 / 5 - 459.67)) + " °C");
 
-            weatherDescription2.setText(forecastWeather.currentCondition.getDescr());
-            temperature2.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+            weatherDescription2.setText(forecastWeather.currentCondition.getDescr2());
+            temperature2.setText("" + Math.round((forecastWeather.temperature.getTemp2() * 9 / 5 - 459.67)) + " °C");
 
-            weatherDescription3.setText(forecastWeather.currentCondition.getDescr());
-            temperature3.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+            weatherDescription3.setText(forecastWeather.currentCondition.getDescr3());
+            temperature3.setText("" + Math.round((forecastWeather.temperature.getTemp3() * 9 / 5 - 459.67)) + " °C");
 
-            weatherDescription4.setText(forecastWeather.currentCondition.getDescr());
-            temperature4.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+            weatherDescription4.setText(forecastWeather.currentCondition.getDescr4());
+            temperature4.setText("" + Math.round((forecastWeather.temperature.getTemp4() * 9 / 5 - 459.67)) + " °C");
 
-            weatherDescription5.setText(forecastWeather.currentCondition.getDescr());
-            temperature5.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+            weatherDescription5.setText(forecastWeather.currentCondition.getDescr5());
+            temperature5.setText("" + Math.round((forecastWeather.temperature.getTemp5() * 9 / 5 - 459.67)) + " °C");
         }
 
 
