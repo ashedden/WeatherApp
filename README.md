@@ -29,15 +29,19 @@ I first got it working with sample text.
 
 **Today's Weather Screen (Scrollable):**
 
+![Alt text](/app/src/main/res/drawable/sstoday1.png?raw=true)
+
+![Alt text](/app/src/main/res/drawable/sstoday2.png?raw=true)
+
 **5 Day Forcast (Scrollable):**
+
+![Alt text](/app/src/main/res/drawable/ssfive1.png?raw=true)
+
+![Alt text](/app/src/main/res/drawable/ssfive2.png?raw=true)
 
 ##Future Goals:
 
 -Make layout consistent on all layouts (probably looks funky on Android phones since I don't have a smaller Android device/phone to test on)
 
--Fix bug: if user types in city/country combination that does not exist, app crashes
-
--Fill out table in 5 day forecast using OpenWeatherMap Api
-
--Update screenshots
+-Restructure code to be more separate and reusable
 
