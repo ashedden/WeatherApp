@@ -41,5 +41,7 @@ I first got it working with sample text.
 
 -If user types in city/country combination that does not exist, app crashes
 
--Filling out table in 5 day forecast
+-Filling out table in 5 day forecast using OpenWeatherMap Api
+
+-Update screenshots
 

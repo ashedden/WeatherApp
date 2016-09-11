@@ -25,6 +25,9 @@ import java.net.URL;
 /**
  * Created by Allison on 9/10/2016.
  */
+
+//Used direct lines of code from https://github.com/survivingwithandroid/Swa-app/tree/master/WeatherApp
+
 public class TodaysWeatherActivity extends AppCompatActivity {
 
     static final String API_KEY = "71c9847a4dea7b8bf18c4c126f892abf";
@@ -136,7 +139,7 @@ public class TodaysWeatherActivity extends AppCompatActivity {
                 e.printStackTrace();
             } catch(Throwable t) {
                 t.printStackTrace();
-            } 
+            }
             finally {
             try { is.close(); } catch(Throwable t) {}
             try { con.disconnect(); } catch(Throwable t) {}
@@ -161,7 +164,6 @@ public class TodaysWeatherActivity extends AppCompatActivity {
         }
 
     }
-
 
     //From Android website
     @Override

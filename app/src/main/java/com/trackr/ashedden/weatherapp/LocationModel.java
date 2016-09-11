@@ -5,17 +5,9 @@ import java.io.Serializable;
 /**
  * Created by Allison on 9/10/2016.
  */
-/**
- * This is a tutorial source code
- * provided "as is" and without warranties.
- *
- * For any question please visit the web site
- * http://www.survivingwithandroid.com
- *
- * or write an email to
- * survivingwithandroid@gmail.com
- *
- */
+
+//Used direct lines of code from https://github.com/survivingwithandroid/Swa-app/tree/master/WeatherApp
+
 /*
  * Copyright (C) 2013 Surviving with Android (http://www.survivingwithandroid.com)
  *
