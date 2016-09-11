@@ -2,7 +2,7 @@
 
 This is a weather app using the OpenWeatherMap API (NOT YET).
 
-I will first test the app using a XML file.
+I will currently have it working with sample text.
 
 ##Resources used:
 
