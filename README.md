@@ -25,15 +25,11 @@ I first got it working with sample text.
 
 **Main Screen:**
 
-![Alt text](/app/src/main/res/drawable/main.png?raw=true)
+![Alt text](/app/src/main/res/drawable/ssmain.png?raw=true)
 
 **Today's Weather Screen (Scrollable):**
 
-![Alt text](/app/src/main/res/drawable/todaysweather.png?raw=true)
-
 **5 Day Forcast (Scrollable):**
-
-![Alt text](/app/src/main/res/drawable/fivedayforecast.png?raw=true)
 
 ##Future Goals:
 
