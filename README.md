@@ -17,3 +17,17 @@ I will first test the app using a XML file.
 -[Back Button] (https://developer.android.com/training/implementing-navigation/ancestral.html)
 
 -[Table Layout] (https://developer.android.com/guide/topics/ui/layout/grid.html)
+
+##Screenshots of Sample Text on Samsung Tablet
+
+**Main Screen:**
+
+![Alt text](/app/src/main/res/drawable/Main.png?raw=true)
+
+**Today's Weather Screen (Scrollable):**
+
+![Alt text](/app/src/main/res/drawable/TodaysWeather.png?raw=true)
+
+**5 Day Forcast (Scrollable):**
+
+![Alt text](/app/src/main/res/drawable/FiveDayForecast.png?raw=true)
