@@ -15,3 +15,5 @@ I will first test the app using a XML file.
 -[RGB Color finder] (http://www.rapidtables.com/web/color/RGB_Color.htm)
 
 -[Back Button] (https://developer.android.com/training/implementing-navigation/ancestral.html)
+
+-[Table Layout] (https://developer.android.com/guide/topics/ui/layout/grid.html)
