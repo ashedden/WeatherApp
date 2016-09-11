@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -32,9 +33,18 @@ public class MainActivity extends AppCompatActivity {
 
                 //Get input from EditText
                 city = editText.getText().toString();
-                Intent i = new Intent(MainActivity.this, TodaysWeatherActivity.class);
-                i.putExtra("city", city);
-                startActivity(i);
+
+                Log.e("HELP", city);
+                if (city.matches("")) {
+                    city = "santabarbara,us";
+                    Intent i = new Intent(MainActivity.this, TodaysWeatherActivity.class);
+                    i.putExtra("city", city);
+                    startActivity(i);
+                }else {
+                    Intent i = new Intent(MainActivity.this, TodaysWeatherActivity.class);
+                    i.putExtra("city", city);
+                    startActivity(i);
+                }
             }
         });
     }

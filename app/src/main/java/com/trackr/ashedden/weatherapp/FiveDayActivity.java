@@ -210,19 +210,19 @@ public class FiveDayActivity extends AppCompatActivity {
             date5.setText(formattedDate);
 
             weatherDescription1.setText(forecastWeather.currentCondition.getDescr1());
-            temperature1.setText("" + Math.round((forecastWeather.temperature.getTemp1() * 9 / 5 - 459.67)) + " °C");
+            temperature1.setText("" + Math.round((forecastWeather.temperature.getTemp1() * 9 / 5 - 459.67)) + " °F");
 
             weatherDescription2.setText(forecastWeather.currentCondition.getDescr2());
-            temperature2.setText("" + Math.round((forecastWeather.temperature.getTemp2() * 9 / 5 - 459.67)) + " °C");
+            temperature2.setText("" + Math.round((forecastWeather.temperature.getTemp2() * 9 / 5 - 459.67)) + " °F");
 
             weatherDescription3.setText(forecastWeather.currentCondition.getDescr3());
-            temperature3.setText("" + Math.round((forecastWeather.temperature.getTemp3() * 9 / 5 - 459.67)) + " °C");
+            temperature3.setText("" + Math.round((forecastWeather.temperature.getTemp3() * 9 / 5 - 459.67)) + " °F");
 
             weatherDescription4.setText(forecastWeather.currentCondition.getDescr4());
-            temperature4.setText("" + Math.round((forecastWeather.temperature.getTemp4() * 9 / 5 - 459.67)) + " °C");
+            temperature4.setText("" + Math.round((forecastWeather.temperature.getTemp4() * 9 / 5 - 459.67)) + " °F");
 
             weatherDescription5.setText(forecastWeather.currentCondition.getDescr5());
-            temperature5.setText("" + Math.round((forecastWeather.temperature.getTemp5() * 9 / 5 - 459.67)) + " °C");
+            temperature5.setText("" + Math.round((forecastWeather.temperature.getTemp5() * 9 / 5 - 459.67)) + " °F");
         }
 
 
