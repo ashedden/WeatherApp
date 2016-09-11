@@ -25,7 +25,8 @@ public class FiveDayActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                NavUtils.navigateUpFromSameTask(this);
+                //To maintain state
+                onBackPressed();
                 return true;
         }
         return super.onOptionsItemSelected(item);
