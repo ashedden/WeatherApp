@@ -37,8 +37,8 @@ public class FiveDayActivity extends AppCompatActivity {
 
     String city;
     TextView date1, date2, date3, date4, date5;
-    TextView weatherDescription1;
-    TextView temperature1;
+    TextView weatherDescription1, weatherDescription2, weatherDescription3, weatherDescription4, weatherDescription5;
+    TextView temperature1, temperature2, temperature3, temperature4, temperature5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,16 @@ public class FiveDayActivity extends AppCompatActivity {
         date5 = (TextView) findViewById(R.id.five_date5);
 
         weatherDescription1 = (TextView) findViewById(R.id.five_weather1);
+        weatherDescription2 = (TextView) findViewById(R.id.five_weather2);
+        weatherDescription3 = (TextView) findViewById(R.id.five_weather3);
+        weatherDescription4 = (TextView) findViewById(R.id.five_weather4);
+        weatherDescription5 = (TextView) findViewById(R.id.five_weather5);
+
         temperature1 = (TextView) findViewById(R.id.five_temp1);
+        temperature2 = (TextView) findViewById(R.id.five_temp2);
+        temperature3 = (TextView) findViewById(R.id.five_temp3);
+        temperature4 = (TextView) findViewById(R.id.five_temp4);
+        temperature5 = (TextView) findViewById(R.id.five_temp5);
 
         android.support.v7.app.ActionBar mActionBar = getSupportActionBar();
         mActionBar.setTitle("");
@@ -155,7 +164,19 @@ public class FiveDayActivity extends AppCompatActivity {
             date5.setText(formattedDate);
 
             weatherDescription1.setText(forecastWeather.currentCondition.getDescr());
-            temperature1.setText("" + Math.round((forecastWeather.temperature.getTemp() - 273.15)) + " °C");
+            temperature1.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+
+            weatherDescription2.setText(forecastWeather.currentCondition.getDescr());
+            temperature2.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+
+            weatherDescription3.setText(forecastWeather.currentCondition.getDescr());
+            temperature3.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+
+            weatherDescription4.setText(forecastWeather.currentCondition.getDescr());
+            temperature4.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
+
+            weatherDescription5.setText(forecastWeather.currentCondition.getDescr());
+            temperature5.setText("" + Math.round((forecastWeather.temperature.getTemp() * 9 / 5 - 459.67)) + " °C");
         }
 
 
