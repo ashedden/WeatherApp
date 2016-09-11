@@ -13,3 +13,5 @@ I will first test the app using a XML file.
 -[Pixel Art] (http://www.piskelapp.com/)
 
 -[RGB Color finder] (http://www.rapidtables.com/web/color/RGB_Color.htm)
+
+-[Back Button] (https://developer.android.com/training/implementing-navigation/ancestral.html)
