@@ -39,9 +39,9 @@ I first got it working with sample text.
 
 -Make layout consistent on all layouts (probably looks funky on Android phones since I don't have a smaller Android device/phone to test on)
 
--If user types in city/country combination that does not exist, app crashes
+-Fix bug: if user types in city/country combination that does not exist, app crashes
 
--Filling out table in 5 day forecast using OpenWeatherMap Api
+-Fill out table in 5 day forecast using OpenWeatherMap Api
 
 -Update screenshots
 

@@ -155,7 +155,7 @@ public class TodaysWeatherActivity extends AppCompatActivity {
 
             cityName.setText(weather.location.getCity() + ", " + weather.location.getCountry());
             weatherDescription.setText(weather.currentCondition.getDescr());
-            temperature.setText("" + Math.round((weather.temperature.getTemp() - 273.15)) + " degrees Celcius");
+            temperature.setText("" + Math.round((weather.temperature.getTemp() - 273.15)) + " °C");
             humidty.setText("" + weather.currentCondition.getHumidity() + "%");
             windSpeed.setText("" + weather.wind.getSpeed() + " mps");
 

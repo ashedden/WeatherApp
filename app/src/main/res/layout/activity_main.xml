@@ -27,45 +27,43 @@
         android:textSize="80dp"
         android:textColor="@android:color/white"/>
 
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_enter"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_hint"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
     <RelativeLayout
         android:id="@+id/relative"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linear"
-        android:paddingTop="50dp">
-
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/main_enter"
-            android:textColor="@android:color/black"
-            android:textSize="30dp"/>
-
-        <TextView
-            android:id="@+id/hint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/text"
-            android:text="@string/main_hint"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="15dp"
-            android:textSize="20dp"/>
+        android:layout_marginTop="20dp">
 
         <EditText
             android:id="@+id/edittext"
             android:layout_marginTop="10dp"
             android:layout_marginRight="30dp"
             android:background="@android:color/white"
-            android:layout_below="@+id/hint"
             android:padding="5dp"
             android:textSize="20dp"
             android:hint="@string/main_structure"
             android:clickable="true"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:layout_width="150dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content" />
 
         <Button

@@ -4,7 +4,7 @@
     <string name="main_title">How\'s the Weather Out There?</string>
     <string name="main_enter">Enter Your City\'s Name:</string>
     <string name="main_hint">(No spaces please!)</string>
-    <string name="main_structure">City,Country</string>
+    <string name="main_structure">ex. santabarbara,us</string>
     <string name="main_search">Search</string>
     
     <string name="today_title">Today\'s Weather</string>
@@ -20,5 +20,5 @@
     <string name="five_date">Date: </string>
     <string name="five_weather">Weather Description: </string>
     <string name="five_temp">Temperature: </string>
-    <string name="five_sample">Sample Text</string>
+    <string name="five_sample"> </string>
 </resources>
