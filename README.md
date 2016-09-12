@@ -2,7 +2,7 @@
 
 This is a weather app using the OpenWeatherMap API.
 
-I first got it working with sample text.
+I got it working with sample text first, then tried for the API. With the help of my resources listed below, I was able to do so!
 
 ##Resources used:
 
@@ -42,4 +42,6 @@ I first got it working with sample text.
 ##Future Goals:
 
 -Restructure code to be more separate and reusable
+
+-Fix bug that happens when user includes a "space" in their input
 
