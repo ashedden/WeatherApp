@@ -13,18 +13,18 @@
     tools:context="com.trackr.ashedden.weatherapp.MainActivity">
 
     <ImageView
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/sun"/>
 
     <TextView
         android:id="@+id/title"
         android:gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/today_title"
-        android:textSize="35dp"
+        android:textSize="80dp"
         android:textColor="@android:color/white"/>
 
     <ScrollView
@@ -42,7 +42,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp">
+                android:layout_marginLeft="50dp">
 
                 <TextView
                     android:id="@+id/city"
@@ -51,9 +51,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/today_city"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/white"
-                    android:layout_marginRight="15dp"/>
+                    android:layout_marginRight="30dp"/>
 
                 <TextView
                     android:id="@+id/citytext"
@@ -64,7 +64,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/today_sample"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black"/>
 
             </RelativeLayout>
@@ -72,7 +72,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp">
+                android:layout_marginLeft="50dp">
 
                 <TextView
                     android:id="@+id/weather"
@@ -80,10 +80,10 @@
                     android:layout_marginTop="50dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/today_weather"
-                    android:textSize="20dp"
+                    android:text="@string/today_weather_large"
+                    android:textSize="25dp"
                     android:textColor="@android:color/white"
-                    android:layout_marginRight="15dp"/>
+                    android:layout_marginRight="30dp"/>
 
                 <TextView
                     android:id="@+id/weathertext"
@@ -94,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/today_sample"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black"/>
 
             </RelativeLayout>
@@ -102,7 +102,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp">
+                android:layout_marginLeft="50dp">
 
             <TextView
                 android:id="@+id/temp"
@@ -111,9 +111,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/today_temp"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:textColor="@android:color/white"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginRight="30dp"/>
 
                 <TextView
                     android:id="@+id/temptext"
@@ -124,7 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/today_sample"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black"/>
 
             </RelativeLayout>
@@ -132,7 +132,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp">
+                android:layout_marginLeft="50dp">
 
             <TextView
                 android:id="@+id/humid"
@@ -141,9 +141,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/today_humid"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:textColor="@android:color/white"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginRight="30dp"/>
 
                 <TextView
                     android:id="@+id/humidtext"
@@ -154,7 +154,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/today_sample"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black"/>
 
             </RelativeLayout>
@@ -162,7 +162,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp">
+                android:layout_marginLeft="50dp">
 
             <TextView
                 android:id="@+id/wind"
@@ -171,9 +171,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/today_wind"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:textColor="@android:color/white"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginRight="30dp"/>
 
                 <TextView
                     android:id="@+id/windtext"
@@ -184,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/today_sample"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black"/>
 
             </RelativeLayout>
@@ -194,7 +194,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
                 android:text="@string/today_forecast"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:textColor="@android:color/white"
                 android:textAllCaps="false"
                 android:layout_width="wrap_content"

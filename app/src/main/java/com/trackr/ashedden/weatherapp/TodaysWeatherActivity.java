@@ -157,7 +157,7 @@ public class TodaysWeatherActivity extends AppCompatActivity {
             weatherDescription.setText(weather.currentCondition.getDescr());
             temperature.setText("" + Math.round((weather.temperature.getTemp() * 9 / 5 - 459.67)) + " °F");
             humidty.setText("" + weather.currentCondition.getHumidity() + "%");
-            windSpeed.setText("" + weather.wind.getSpeed() + " mps");
+            windSpeed.setText("" + weather.wind.getSpeed() + " mph");
 
             super.onPostExecute(weather);
 

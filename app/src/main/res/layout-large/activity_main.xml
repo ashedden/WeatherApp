@@ -13,28 +13,28 @@
     tools:context="com.trackr.ashedden.weatherapp.MainActivity">
 
     <ImageView
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/sun"/>
 
     <TextView
         android:id="@+id/title"
         android:gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main_title"
-        android:textSize="35dp"
+        android:textSize="80dp"
         android:textColor="@android:color/white"/>
 
     <TextView
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main_enter"
         android:textColor="@android:color/black"
-        android:textSize="20dp"/>
+        android:textSize="30dp"/>
 
     <TextView
         android:id="@+id/hint"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="@string/main_hint"
         android:textColor="@android:color/black"
-        android:textSize="15dp"/>
+        android:textSize="20dp"/>
 
     <RelativeLayout
         android:id="@+id/relative"
@@ -55,15 +55,15 @@
         <EditText
             android:id="@+id/edittext"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="30dp"
             android:background="@android:color/white"
             android:padding="5dp"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:hint="@string/main_structure"
             android:clickable="true"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:layout_width="160dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content" />
 
         <Button
@@ -71,7 +71,7 @@
             android:layout_below="@+id/edittext"
             android:layout_toRightOf="@id/edittext"
             android:text="@string/main_search"
-            android:textSize="20sp"
+            android:textSize="25sp"
             android:textColor="@android:color/white"
             android:textAllCaps="false"
             android:layout_width="wrap_content"

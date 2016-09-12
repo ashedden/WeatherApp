@@ -13,18 +13,18 @@
     tools:context="com.trackr.ashedden.weatherapp.MainActivity">
 
     <ImageView
-        android:layout_width="170dp"
-        android:layout_height="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/sun"/>
 
     <TextView
         android:id="@+id/five_title"
         android:gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/five_title"
-        android:textSize="35dp"
+        android:textSize="80dp"
         android:textColor="@android:color/white"
         android:layout_marginBottom="30dp"/>
 
@@ -48,44 +48,42 @@
 
             <TableRow>
                 <TextView
+                    android:layout_column="1"
                     android:text="@string/five_date"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/white"/>
                 <TextView
-                    android:id="@+id/five_date1"
-                    android:text="@string/five_sample"
+                    android:text="@string/five_weather_large"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/black"/>
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:text="@string/five_temp"
+                    android:padding="3dip"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
             </TableRow>
-
 
             <TableRow>
                 <TextView
-                    android:text="@string/five_weather"
+                    android:id="@+id/five_date1"
+                    android:layout_column="1"
+                    android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />
+                    android:textSize="25dp"
+                    android:textColor="@android:color/black"/>
                 <TextView
                     android:id="@+id/five_weather1"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="@string/five_temp"
-                    android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />>
                 <TextView
                     android:id="@+id/five_temp1"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
             </TableRow>
 
@@ -95,47 +93,44 @@
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp" />
 
-
             <TableRow>
                 <TextView
+                    android:layout_column="1"
                     android:text="@string/five_date"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/white"/>
                 <TextView
-                    android:id="@+id/five_date2"
-                    android:text="@string/five_sample"
+                    android:text="@string/five_weather_large"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/black"/>
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:text="@string/five_temp"
+                    android:padding="3dip"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
             </TableRow>
-
 
             <TableRow>
                 <TextView
-                    android:text="@string/five_weather"
+                    android:id="@+id/five_date2"
+                    android:layout_column="1"
+                    android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />
+                    android:textSize="25dp"
+                    android:textColor="@android:color/black"/>
                 <TextView
                     android:id="@+id/five_weather2"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="@string/five_temp"
-                    android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />>
                 <TextView
                     android:id="@+id/five_temp2"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
             </TableRow>
 
@@ -143,48 +138,46 @@
                 android:layout_height="2dip"
                 android:background="@color/orange"
                 android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="20dp"/>
 
             <TableRow>
                 <TextView
+                    android:layout_column="1"
                     android:text="@string/five_date"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/white"/>
                 <TextView
-                    android:id="@+id/five_date3"
-                    android:text="@string/five_sample"
+                    android:text="@string/five_weather_large"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/black"/>
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:text="@string/five_temp"
+                    android:padding="3dip"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
             </TableRow>
-
 
             <TableRow>
                 <TextView
-                    android:text="@string/five_weather"
+                    android:id="@+id/five_date3"
+                    android:layout_column="1"
+                    android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />
+                    android:textSize="25dp"
+                    android:textColor="@android:color/black"/>
                 <TextView
                     android:id="@+id/five_weather3"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="@string/five_temp"
-                    android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />>
                 <TextView
                     android:id="@+id/five_temp3"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
             </TableRow>
 
@@ -192,49 +185,46 @@
                 android:layout_height="2dip"
                 android:background="@color/orange"
                 android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp" />
-
+                android:layout_marginTop="20dp"/>
 
             <TableRow>
                 <TextView
+                    android:layout_column="1"
                     android:text="@string/five_date"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/white"/>
                 <TextView
-                    android:id="@+id/five_date4"
-                    android:text="@string/five_sample"
+                    android:text="@string/five_weather_large"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/black"/>
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:text="@string/five_temp"
+                    android:padding="3dip"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
             </TableRow>
-
 
             <TableRow>
                 <TextView
-                    android:text="@string/five_weather"
+                    android:id="@+id/five_date4"
+                    android:layout_column="1"
+                    android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />
+                    android:textSize="25dp"
+                    android:textColor="@android:color/black"/>
                 <TextView
                     android:id="@+id/five_weather4"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="@string/five_temp"
-                    android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />>
                 <TextView
                     android:id="@+id/five_temp4"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
             </TableRow>
 
@@ -242,52 +232,48 @@
                 android:layout_height="2dip"
                 android:background="@color/orange"
                 android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp" />
-
+                android:layout_marginTop="20dp"/>
 
             <TableRow>
                 <TextView
+                    android:layout_column="1"
                     android:text="@string/five_date"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/white"/>
                 <TextView
-                    android:id="@+id/five_date5"
-                    android:text="@string/five_sample"
+                    android:text="@string/five_weather_large"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/black"/>
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:text="@string/five_temp"
+                    android:padding="3dip"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/white" />
             </TableRow>
-
 
             <TableRow>
                 <TextView
-                    android:text="@string/five_weather"
+                    android:id="@+id/five_date5"
+                    android:layout_column="1"
+                    android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />
+                    android:textSize="25dp"
+                    android:textColor="@android:color/black"/>
                 <TextView
                     android:id="@+id/five_weather5"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="@string/five_temp"
-                    android:padding="3dip"
-                    android:textSize="20dp"
-                    android:textColor="@android:color/white" />>
                 <TextView
                     android:id="@+id/five_temp5"
                     android:text="@string/five_sample"
                     android:padding="3dip"
-                    android:textSize="20dp"
+                    android:textSize="25dp"
                     android:textColor="@android:color/black" />
             </TableRow>
-
             <View
                 android:layout_height="2dip"
                 android:background="@color/orange"
