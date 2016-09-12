@@ -89,13 +89,14 @@ public class TodaysWeatherActivity extends AppCompatActivity {
             final String MY_URL = API_WEATHER_URL + city;
 
             try {
+                //Connect to object
                 con = (HttpURLConnection) ( new URL(MY_URL)).openConnection();
                 con.setRequestMethod("GET");
                 con.setDoInput(true);
                 con.setDoOutput(true);
                 con.connect();
 
-                // Let's read the response
+                //Read object
                 StringBuffer buffer = new StringBuffer();
                 is = con.getInputStream();
                 br = new BufferedReader(new InputStreamReader(is));
@@ -105,20 +106,14 @@ public class TodaysWeatherActivity extends AppCompatActivity {
                 is.close();
                 con.disconnect();
 
-                // We create out JSONObject from the data
+                //Parse object
                 JSONObject jObj = new JSONObject(buffer.toString());
-
-                // We start extracting the info
-
                 JSONObject sysObj = jObj.getJSONObject("sys");
                 loc.setCountry(sysObj.getString("country"));
                 loc.setCity(jObj.getString("name"));
                 weather.location = loc;
 
-                // We get weather info (This is an array)
                 JSONArray jArr = jObj.getJSONArray("weather");
-
-                // We use only the first value
                 JSONObject JSONWeather = jArr.getJSONObject(0);
                 weather.currentCondition.setDescr(JSONWeather.getString("description"));
 
@@ -126,7 +121,6 @@ public class TodaysWeatherActivity extends AppCompatActivity {
                 weather.currentCondition.setHumidity(mainObj.getInt("humidity"));
                 weather.temperature.setTemp((float)mainObj.getDouble("temp"));
 
-                // Wind
                 JSONObject wObj = jObj.getJSONObject("wind");
                 weather.wind.setSpeed((float)wObj.getDouble("speed"));
 
@@ -166,7 +160,6 @@ public class TodaysWeatherActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            // Respond to the action bar's Up/Home button
             case android.R.id.home:
                 NavUtils.navigateUpFromSameTask(this);
                 return true;

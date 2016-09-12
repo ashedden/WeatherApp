@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
                 //Get input from EditText
                 city = editText.getText().toString();
-
                 if (city.matches("")) {
                     city = "santabarbara,us";
                     Intent i = new Intent(MainActivity.this, TodaysWeatherActivity.class);

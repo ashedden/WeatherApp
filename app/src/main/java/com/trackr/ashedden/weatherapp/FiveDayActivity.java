@@ -87,13 +87,14 @@ public class FiveDayActivity extends AppCompatActivity {
             final String url = API_FORECAST_URL + "&cnt=5" + forecastDayNum + "&q=" + city;
 
             try {
+                //Connect to object
                 con = (HttpURLConnection) ( new URL(url)).openConnection();
                 con.setRequestMethod("GET");
                 con.setDoInput(true);
                 con.setDoOutput(true);
                 con.connect();
 
-                // Let's read the response
+                //Read object
                 StringBuffer buffer1 = new StringBuffer();
                 is = con.getInputStream();
                 br1 = new BufferedReader(new InputStreamReader(is));
@@ -103,9 +104,8 @@ public class FiveDayActivity extends AppCompatActivity {
                 is.close();
                 con.disconnect();
 
-                // We create out JSONObject from the data
+                //Parse object
                 JSONObject jObj = new JSONObject(buffer1.toString());
-
                 JSONArray jArr = jObj.getJSONArray("list");
 
                 for(int i=0;i<jArr.length()-2;i++) {
@@ -185,6 +185,7 @@ public class FiveDayActivity extends AppCompatActivity {
         protected void onPostExecute(ForecastModel forecastWeather) {
             super.onPostExecute(forecastWeather);
 
+            //Make today's date
             GregorianCalendar gc = new GregorianCalendar();
             String formattedDate = sdf.format(gc.getTime());
             date1.setText(formattedDate);
