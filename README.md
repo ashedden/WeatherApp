@@ -41,7 +41,5 @@ I first got it working with sample text.
 
 ##Future Goals:
 
--Make layout consistent on all layouts (probably looks funky on Android phones since I don't have a smaller Android device/phone to test on)
-
 -Restructure code to be more separate and reusable
 

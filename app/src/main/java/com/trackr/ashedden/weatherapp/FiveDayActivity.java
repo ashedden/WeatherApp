@@ -106,14 +106,10 @@ public class FiveDayActivity extends AppCompatActivity {
                 // We create out JSONObject from the data
                 JSONObject jObj = new JSONObject(buffer1.toString());
 
-                Log.e("HELP", "JSON: " + jObj.toString());
-
                 JSONArray jArr = jObj.getJSONArray("list");
 
                 for(int i=0;i<jArr.length()-2;i++) {
-                    Log.e("HELP", "i = " + i);
                     JSONObject wObj = jArr.getJSONObject(i);
-                    Log.e("HELP", "wObj = " + wObj.toString());
 
                     if (i == 0) {
                         JSONObject tempObj = wObj.getJSONObject("temp");

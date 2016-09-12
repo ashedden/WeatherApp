@@ -102,7 +102,6 @@ public class TodaysWeatherActivity extends AppCompatActivity {
                 String line = "";
                 while (  (line = br.readLine()) != null ){
                     buffer.append(line + "\r\n");}
-                Log.e("HELP", "Buffer.toString : " + buffer.toString());
                 is.close();
                 con.disconnect();
 
@@ -150,8 +149,6 @@ public class TodaysWeatherActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(WeatherModel weather) {
-
-            Log.e("HELP", "weather: "+ weather);
 
             cityName.setText(weather.location.getCity() + ", " + weather.location.getCountry());
             weatherDescription.setText(weather.currentCondition.getDescr());
